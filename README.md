@@ -3,7 +3,12 @@
 
 ## Table of Contents
 
+* [Project Instructions]
+
 * [Website Background](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#website-background)
+    - [Website Requirements]()
+    - [Website Enhancement Report]()
+    - [Project Presentation]()
 * [Features Added](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#features-added)
     - [Home Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#home-page)
     - [Eat and Drink Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#eat-and-drink-page)
@@ -21,6 +26,34 @@
     - [Microsoft Edge](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#microsoft-edge)
 * [Project Work Experience](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#project-work-experience)
 
+## Project Instructions
+
+### Website Requirements
+
+1. Use JavaScript and/or jQuery to add at least 3 special effects or user interaction features to the page(s) / site. By the end, you will provide a website enhancement report and present your final project work to the class in a group session.
+2. Publish your project GitHub repository on the web. Make sure the homepage is displayed automatically even if only the folder name but no file name is provided in the site URL.
+3. Make sure your project fulfills the following code format requirements:
+    1. Each JavaScript, html, and css file that you create should have a file header comment to state the author, the purpose, and the date last modified.
+    2. Make sure "use strict" is added at the beginning of all JavaScript files.
+    3. Each JS function / method you create should have a comment about its parameters, return value, as well as the major steps where deemed necessary.
+    4. All identifier names should be meaningful and the code logic is easy to follow.
+    5. All JavaScript, html, and css documents should be formatted properly so that they are easy to read. In general, formatting your code with VS Code formatting tool would fulfil this requirement.
+4. Test your website with at least 2 browsers.
+
+### Website Enhancement Report
+
+This report will include but not be limited to the following:
+
+1. Website background information.
+2. Features added and how they would enhance the page(s) / site.
+3. JavaScript and jQuery techniques used - how the features are implemented.
+4. HTML and CSS validation result and the browser testing result.
+5. Project work experience - knowledge & skills acquired through the project implementation, time spent on the implementation, challenges encountered, lessons learnt, and any suggestion you may have. A template is here for your convenience.
+6. This Website Enhancement Report should be presented in a typical business report style. It should have a proper cover page, table of content, header / footer, page number, section headings, consistent styling, etc.
+
+### Project Presentation
+
+Record a brief 5-10 minute video presentation highlighting the key features of the project and a reflection on the lessons learned.
 
 
 ## Website Background
