@@ -471,3 +471,23 @@ This section’s content is the implementation of my enhancement and testing if 
 
 
 ## Project Work Experience
+
+For my project work experience, I finished it in less than three weeks including finalizing the layout of my website which takes me too long.
+
+_Challenges Encountered:_
+
+* The new layout for the website and what JavaScript to be most suitable to applied.
+* When I tried to make just only one JS file for all the pages my code crashes.
+* In index Html, I found tricky because at first when I hove the mouse the background didn’t hide and stays to the last background that I hover over.
+* Most of my enhancement is the images, the hard part is how to make those images with the same width. (All contents in my website including images and videos are taken by myself and it has different sizes).
+* Others were frustrations about typo error and sometimes my code didn’t work properly.
+
+_Knowledge and skills acquired_
+
+* The first thing I applied is the prompt which we learned at first week of our class. I used this JS because it makes the website personalized to the customers.
+* Console.log that serves as debugging for my code and before going forward I make sure that I am getting the right value that I wanted.
+* I applied the array methods and properties such indexOf, split & splice.
+* The DOM method, that I used in all my codes to control the content, structure, and style of my website. 
+* Also, the cool thing about jQuery effects and animations, I am able to apply this by toggles between the show and hide methods.
+
+Our weekly lessons and activities help me to guide to finish this project. Many more to come and to try about JavaScript. Understanding the fundamentals and basics is a great start to have and looking forward to knowing more about JS.
