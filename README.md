@@ -3,12 +3,12 @@
 
 ## Table of Contents
 
-* [Project Instructions]
-
+* [Project Instructions](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#project-instructions)
+    - [Website Requirements](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#website-requirements)
+    - [Website Enhancement Report](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#website-enhancement-report)
+    - [Project Presentation](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#project-presentation)
 * [Website Background](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#website-background)
-    - [Website Requirements]()
-    - [Website Enhancement Report]()
-    - [Project Presentation]()
+
 * [Features Added](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#features-added)
     - [Home Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#home-page)
     - [Eat and Drink Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#eat-and-drink-page)
@@ -18,12 +18,17 @@
     - [Eat Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#eat-page)
     - [Drink Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#drink-page)
     - [Absorb Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#absorb-page-1)
+    
 * [HTML Validation Results](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#html-validation-results)
+
 * [CSS Validation Result](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#css-validation-result)
+
 * [JavaScript Validation Result](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#javascript-validation-result)
+
 * [Browser Testing Result](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#browser-testing-result)
     - [Google Chrome](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#google-chrome)
     - [Microsoft Edge](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#microsoft-edge)
+    
 * [Project Work Experience](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#project-work-experience)
 
 ## Project Instructions
