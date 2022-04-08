@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  Author: Ma. Katrina P. Magsakay
+  Purpose: DGL 113 Project - Website Enhancement
+  Date Last Modified: April 07, 2022 
+-->
+
+<!--Implementation of prompt--> 
+<script>var customerName = prompt("Please enter your name kaBARRIO:"); </script>
+
+<head>
+  <title>Barrio Quatro</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="images/logo.JPG" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body class="Home-body">
+
+<header class="Home-header">
+  <a href="index.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
+  <nav class="index-nav">
+    <div class="menu-label">Menu</div>
+      <ul id="nav-items">
+        <li ><a href="ordernow.html">Order Now</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="https://www.facebook.com/barrioquatro2021" target="_blank"> <i class="fa fa-facebook-square" aria-hidden="true"></i ></a></li>
+        <li><a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      </ul>
+      <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+  </nav>
+</header>
+
+<!--Writing the customer's input at prompt--> 
+<h1>Hi <script> document.write(customerName) </script>! 
+<br>Welcome to Barrio Quatro</h1>
+
+<!--Implementation of hovering background-->
+<main class="Home-main">
+  <div id="main-nav" class="main-nav">
+    <a href="Eat.html" onmouseover="eatBG()" onmouseout="hideBG()">EAT</a>
+    <a href="Drink.html" onmouseover="drinkBG()" onmouseout="hideBG()">DRINK</a>
+    <a href="Absorb.html" onmouseover="absorbBG()" onmouseout="hideBG()">ABSORB</a>
+  </div>
+
+  <article class="Home-video">
+    <h2>Experience Dining with Us!</h2>
+    <div class="video">
+      <video controls>
+      <source src="videos/welcome1.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </article>
+      
+  <aside class="aside">
+    <a class="rsv" href="contactus.html">Make a Reservation</a>
+  </aside>
+  
+</main>
+
+<footer>
+  <div class="footer-div">
+  <h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
+  <a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+  <a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+  <a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+  </div>
+</footer>
+
+<script src="index.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  Author: Ma. Katrina P. Magsakay
+  Purpose: DGL 113 Project - Website Enhancement
+  Date Last Modified: April 07, 2022 
+-->
+
+<head>
+  <title>Order Now — Barrio Quatro</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo.JPG" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  </style>
+</head>
+
+<body class="Home-body">
+
+<header class="Home-header">
+  <a href="index.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
+<nav class="Home-nav">
+  <div class="Home-div">
+    <a href="ordernow.html">Order Now</a>
+    <a href="index.html">Home</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+  </div>
+</nav>
+</header>
+
+<main class="OrderNow-main">
+<h1>— ORDER NOW —</h1>
+<article>
+  <h2 style="text-align: center;">Hungry? Order Online and we will satisfy your cravings.</h2>
+  <div class="wrapper-form">
+  <h2 style="text-align: center;">Order Form </h2>
+  <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+    <label for="fullname">Full Name<span class="label-required"> * (required)</span></label>
+    <input type="text" id="fullname" name="fullname" placeholder="Ex: Katrina Padilla">
+
+    <label for="address">Address <span class="label-required"> * (required)</span></label>
+    <input type="text" id="address" name="address" placeholder="Ex: Purok 4, Sta Barbara">
+
+    <label for="contactno">Contact No.<span class="label-required"> * (required)</span></label>
+    <input type="text" id="contactno" name="contactno" placeholder="Ex: 09262976806" required>
+   
+    <label for="datetime">Order Date & Time <span class="label-required"> * (required)</span> </label><br>
+    <input type="datetime-local" id="datetime" name="datetime" required>
+    
+    <br> <br>
+
+    <label for="mode" >Mode of Order</label><br>
+    <select id="mode" name="mode">
+      <option value="Dine-In">Dine-In</option>
+      <option value="Pick Up">Pick Up</option>
+      <option value="Deliver">Deliver</option>
+    </select>
+
+    <p>CHOOSE YOUR ORDER:</p>
+
+    <fieldset>
+      <legend>Made to Order</legend>
+      <input type="number" id="pancit" name="order" min="1" max="50">
+      <label for="pancit">Pancit</label><br>
+      <input type="number" id="palabok" name="order" min="1" max="50">     
+      <label for="palabok">Palabok</label><br>
+      <input type="number" id="shanghai" name="order" min="1" max="50">  
+      <label for="shanghai">Lumpiang Shanghai</label><br>
+      <input type="number" id="sisig" name="order" min="1" max="50"> 
+      <label for="sisig">Sisig</label><br>
+      <input type="number" id="dinakdakan" name="order" min="1" max="50"> 
+      <label for="dinakdakan">Dinakdakan</label><br>
+      <input type="number" id="wings" name="order" min="1" max="50"> 
+      <label for="wings">Chicken Wings Platter</label><br>
+      <input type="number" id="menudo" name="order" min="1" max="50"> 
+      <label for="menudo">Menudo</label><br>
+      <input type="number" id="kare" name="order" min="1" max="50"> 
+      <label for="kare">Kare - Kare</label><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Barrio's Platter</legend>
+      <input type="number" id="barkada" name="order" min="1" max="50">
+      <label for="barkada">Barkada Platter</label><br>
+      <input type="number" id="pamilya" name="order" min="1" max="50">     
+      <label for="pamilya">Pamilya Platter</label><br>
+      <input type="number" id="jowa" name="order" min="1" max="50">  
+      <label for="jowa">Jowa Platter</label><br>
+      <input type="number" id="ihaw" name="order" min="1" max="50"> 
+      <label for="ihaw">Ihaw - Ihaw Platter</label><br>  
+    </fieldset>
+
+    <fieldset>
+    <legend>Soup</legend>
+      <input type="number" id="gotoegg" name="order" min="1" max="50">
+      <label for="gotoegg">Goto with Egg</label><br>
+      <input type="number" id="gotospecial" name="order" min="1" max="50">     
+      <label for="gotospecial">Goto Special</label><br>
+      <input type="number" id="paresr" name="order" min="1" max="50">  
+      <label for="paresr">Pares Rice</label><br>
+      <input type="number" id="paresm" name="order" min="1" max="50"> 
+      <label for="paresm">Pares Mami</label><br>
+      <input type="number" id="papaitan" name="order" min="1" max="50"> 
+      <label for="papaitan">Papaitan</label><br>    
+    </fieldset>
+
+    <fieldset>
+    <legend>Barrio's Chicken</legend>
+      <input type="number" id="originalfeet" name="order" min="1" max="50">
+      <label for="originalfeet">Original Chicken Feet</label><br>
+      <input type="number" id="flavoredfeet" name="order" min="1" max="50">     
+      <label for="flavoredfeet">Original Chicken Feet</label><br>
+      <input type="number" id="chickenbbq" name="order" min="1" max="50">  
+      <label for="chickenbbq">Chicken Barbeque</label><br>
+      <input type="number" id="chickenpotato" name="order" min="1" max="50"> 
+      <label for="chickenpotato">Chicken Potato</label><br>
+      <input type="number" id="chickenwings" name="order" min="1" max="50"> 
+      <label for="chickenwings">Chicken Wings</label><br>    
+    </fieldset>
+
+    <fieldset>
+    <legend>Fried Street Foods</legend>
+      <input type="number" id="fishball" name="order" min="1" max="50">
+      <label for="fishball">Fishball</label><br>
+      <input type="number" id="squidball" name="order" min="1" max="50">     
+      <label for="squidball">Squidball</label><br>
+      <input type="number" id="kikiam" name="order" min="1" max="50">  
+      <label for="kikiam">Kikiam</label><br>
+      <input type="number" id="siomai" name="order" min="1" max="50"> 
+      <label for="siomai">Siomai</label><br>
+      <input type="number" id="dynamite" name="order" min="1" max="50"> 
+      <label for="dynamite">Dynamite</label><br>  
+      <input type="number" id="cheesestick" name="order" min="1" max="50"> 
+      <label for="cheesestick">cheese Stick</label><br>   
+      <input type="number" id="fries" name="order" min="1" max="50"> 
+      <label for="fries">Fries</label><br>  
+      <input type="number" id="kwek" name="order" min="1" max="50"> 
+      <label for="kwek">Kwek - Kwek</label><br>   
+    </fieldset>
+
+    <fieldset>
+    <legend>Grilled Street Foods</legend>
+      <input type="number" id="isaw" name="order" min="1" max="50">
+      <label for="isaw">Chicken Isaw</label><br>
+      <input type="number" id="betamax" name="order" min="1" max="50">     
+      <label for="betamax">Betamax</label><br>
+      <input type="number" id="hotdog" name="order" min="1" max="50">  
+      <label for="hotdog">Hotdog</label><br>
+      <input type="number" id="bbq" name="order" min="1" max="50"> 
+      <label for="bbq">Barbeque</label><br>
+      <input type="number" id="balingit" name="order" min="1" max="50"> 
+      <label for="balingit">Balingit</label><br>    
+      <input type="number" id="dayold" name="order" min="1" max="50"> 
+      <label for="dayold">Day Old</label><br>
+      <input type="number" id="orangeegg" name="order" min="1" max="50"> 
+      <label for="orangeegg">Orange Egg</label><br> 
+    </fieldset>
+
+    <fieldset>
+    <legend>Fresh Fruit Shake (22oz)</legend>
+      <input type="number" id="favocado" name="order" min="1" max="50">
+      <label for="favocado">Fresh Avocado</label><br>
+      <input type="number" id="fmango" name="order" min="1" max="50">     
+      <label for="fmango">Fresh Mango</label><br>
+      <input type="number" id="fstrawberry" name="order" min="1" max="50">  
+      <label for="fstrawberry">Fresh Strawberry</label><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Flavored Milk Shake</legend>
+    <table>
+      <thead>
+        <tr>
+          <th >Item</th>
+          <th >Small (8oz)</th>
+          <th >Medium (12oz)</th>
+          <th >Large (22oz)</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td> <label for="blackforest">Black Forest</label><br></td>
+      <td><input type="number" id="blackforest" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mblackforest" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lblackforest" name="order" min="1" max="50"></td>
+    </tr>
+    <tr>
+      <td> <label for="choco">Choco Kisses</label><br></td>
+      <td><input type="number" id="choco" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mchoco" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lchoco" name="order" min="1" max="50"></td>
+    </tr>
+    <tr>
+      <td> <label for="cookies">Cookies&Cream</label><br></td>
+      <td><input type="number" id="cookies" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mcookies" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lcookies" name="order" min="1" max="50"></td>
+    </tr>
+    <tr>
+      <td> <label for="avocado">Avocado</label><br></td>
+      <td><input type="number" id="avocado" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mavocado" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lavocado" name="order" min="1" max="50"></td>
+    </tr>
+    <tr>
+      <td> <label for="buko">Buko Pandan</label><br></td>
+      <td><input type="number" id="buko" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mbuko" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lbuko" name="order" min="1" max="50"></td>
+    </tr>
+    <tr>
+      <td> <label for="mango">Mango</label><br></td>
+      <td><input type="number" id="mango" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mmango" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lmango" name="order" min="1" max="50"></td>
+    </tr>
+    <tr>
+      <td> <label for="strawberry">Strawberry</label><br></td>
+      <td><input type="number" id="strawberry" name="order" min="1" max="50"></td>
+      <td><input type="number" id="mstrawberry" name="order" min="1" max="50"></td>
+      <td><input type="number" id="lstrawberry" name="order" min="1" max="50"></td>
+    </tr>
+      </tbody>
+    </table>
+    </fieldset>
+
+    <br>
+   
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Please let us know for any other request." style="height:200px"></textarea>
+
+    <div class="wrapper-button">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Confirm Order">
+    </div>
+
+      <p>For any changes or cancellation of order please directly <a class="contact" href="ContactUs.html">contact</a> Barrio Quatro.</p>
+    
+  </form>
+</div>
+</article>
+
+<aside class="aside">
+  <a class="rsv" href="contactus.html">Make a Reservation</a>
+</aside>
+</main>
+
+<footer>
+<div class="footer-div">
+<h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
+
+<a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+<a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+</div>
+</footer>
+
+</body>
+  
+</html>

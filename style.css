@@ -1,0 +1,733 @@
+/*
+  Author: Ma. Katrina P. Magsakay
+  Purpose: DGL 113 Project - Website Enhancement
+  Date Last Modified: April 07, 2022 
+*/
+
+/*=========================== 
+START: CODE FOR ALL PAGE
+=========================== */
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Space Mono', monospace;
+  color: rgb(194, 88, 2);
+}
+h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(136, 57, 4);
+  text-align: center;
+}
+.Home-body{
+  margin: 0;
+}
+.Home-header {
+  display: flex;
+  justify-content: space-between;
+}
+.Home-nav .Home-div a:hover { 
+  background-color:rgb(255, 217, 0);
+}
+.Home-div a{
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(231, 93, 0, 0.726);
+  padding: 10px;
+}
+.aside{
+  padding-top: 15px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.aside .rsv{
+  text-decoration: none;
+  color: rgb(194, 88, 2);
+}
+.rsv{
+  border: 2px solid rgb(194, 88, 2);
+  border-radius: 5px;
+  padding: 5px;
+}
+footer{
+  background-color:rgb(65, 29, 5);
+  color: rgb(255, 217, 0);
+}
+footer div{
+  padding: 15px;
+  margin: auto;
+  text-align: center;
+}
+.footer-div a{
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+}
+/*===========================  
+END: CODE FOR ALL PAGE 
+===========================*/
+
+/*=========================== 
+START: CODE FOR HOME 
+===========================*/
+.Home-header {
+  display: block;
+}
+.index-nav {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.index-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: none;
+}
+.show-items {
+  display: flex;
+}
+.index-nav ul li a {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgba(231, 93, 0, 0.726);
+  padding: 5px;
+}
+.index-nav ul li a:hover {
+  background-color: rgb(255, 217, 0);
+}
+.index-nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+.main-nav a {
+  font-size: 2rem;
+}
+.Home-video .video{
+  display: block;
+  width: 100vh;
+  margin: auto;
+}
+.video video {
+  width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.Home-header {
+  display: flex;
+  justify-content: space-between;
+}
+.index-nav .menu-label {
+  display: none;
+}
+.index-nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.index-nav ul li {
+  padding-right: 10px;
+}
+.index-nav .toggle {
+  display: none;
+}
+.Home-main .main-nav a {
+  font-size: 4rem;
+}
+.Home-video .video{
+  display: flex;
+  justify-content: space-evenly;
+}
+}
+.Home-main .main-nav a:hover{
+  text-decoration:underline 3px;
+}
+.main-nav{
+  background-image: url(images/chickenplatter1.jpg);
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.Home-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  display: flex;
+}
+.eat-BG{
+  background-image: url(images/gotospecial.jpg);
+  background-size: 100%;
+}
+.drink-BG{
+  background-image: url(images/drink.jpg);
+  background-size: 100%;
+}
+.absorb-BG{
+  background-image: url(images/absorb.jpg);
+  background-size: 100%;
+}
+.hide-BG{
+  background-image: url(images/chickenplatter.jpg);
+}
+.main-nav a{
+  color: rgb(255, 217, 0);
+  text-decoration: none;
+  font-size: 6rem;
+}
+.Home-video{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Home-video h1{
+  text-align: left;
+  padding-left: 90px;
+  padding-bottom: 30px;
+}
+.Home-video .video{
+  display: flex;
+  justify-content: space-evenly;
+}
+.Home-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/*===========================
+END: CODE FOR HOME
+===========================*/
+
+
+
+/*=========================== 
+START: CODE FOR EAT 
+===========================*/
+/* Center website */
+.eat-image{
+  height: 300px;
+  background-size: cover;
+}
+.Eat-main{
+  max-width: 1000px;
+  margin: auto;
+}
+.Eat-row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.Eat-row,
+.Eat-row > .Eat-column {
+  padding: 8px;
+  flex-basis: 30%;
+}
+/* Create three equal columns that floats next to each other */
+.Eat-column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.Eat-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.Eat-content {
+  background-color: rgb(255, 217, 0);
+  padding: 10px;
+}
+/* The "show" class is added to the filtered elements */
+.Eat-show {
+  display: block;
+}
+/* Style the buttons */
+.Eat-btn {
+  font-family: 'Space Mono', monospace;
+  color: rgb(194, 88, 2);
+  font-weight: bold;
+  border: 2px solid rgb(194, 88, 2);
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.Eat-btn:hover {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Eat-btn.active {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Eat-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/*=========================== 
+END: CODE FOR EAT
+===========================*/
+
+
+
+/*===========================
+START: CODE FOR DRINK
+===========================*/
+.drink-image{
+  height: 300px;
+  background-size: cover;
+}
+.Drink-main{
+  max-width: 1000px;
+  margin: auto;
+}
+.Drink-row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.Drink-row,
+.Drink-row > .Drink-column {
+  padding: 8px;
+}
+/* Create three equal columns that floats next to each other */
+.Drink-column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.Drink-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.Drink-content {
+  background-color: rgb(255, 217, 0);
+  padding: 10px;
+}
+/* The "show" class is added to the filtered elements */
+.Drink-show {
+  display: block;
+}
+/* Style the buttons */
+.Drink-btn {
+  font-family: 'Space Mono', monospace;
+  color: rgb(194, 88, 2);
+  font-weight: bold;
+  border: 2px solid rgb(194, 88, 2);
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.Drink-btn:hover {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Drink-btn.active {
+  background-color: rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.Drink-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/*=========================== 
+END: CODE FOR EAT
+===========================*/
+
+
+
+/*===========================  
+START: CODE FOR ABSORB 
+===========================*/
+.Absorb-main{
+  max-width: 1000px;
+  margin: auto;
+}
+.Absorb-place{
+  height: 100px;
+  background-size: cover;
+}
+img {
+  vertical-align: middle;
+  background-size: cover;
+}
+/* Position the image container (for the arrows) */
+.Absorb-container {
+  position: relative;
+  width: 1000px;
+}
+/* Default hide images */
+.Absorb-mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.Absorb-cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.Absorb-prev, .Absorb-next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(194, 88, 2);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.Absorb-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a background color with a little bit see-through */
+.Absorb-prev:hover,
+.Absorb-next:hover {
+  background-color: rgb(255, 217, 0);
+}
+/* Numbering */
+.Absorb-numbertext {
+  color: rgb(255, 217, 0);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Container for image caption */
+.caption-container {
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(255, 217, 0);
+  padding: 2px 16px;
+}
+.Absorb-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Columns side by side */
+.Absorb-column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.Absorb-place {
+  opacity: 0.6;
+}
+.active, .Absorb-place:hover {
+  opacity: 100%;
+}
+.Absorb-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/* CSS for Absorb Videos*/
+.Absorb-video{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Absorb-video h2{
+  padding-left: 10px;
+  padding-bottom: 30px;
+}
+.Absorb-video .video{
+  display: flex;
+  justify-content: space-evenly;
+}
+/*===========================  
+END: CODE FOR ABSORB 
+===========================*/
+
+
+
+/*=========================== 
+START: CODE FOR ABOUT US 
+===========================*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.about-div{
+  display: flex;
+  justify-content:end;
+  background-color: rgb(255, 217, 0);
+}
+.about-div p{
+  text-align: justify;
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.about-image{
+  height: 300px;
+  background-size: cover;
+}
+.about-column{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .about-column{
+    width: 100%;
+    display: block;
+  }
+}
+.about-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 217, 0);
+}
+.about-container {
+  padding: 0 16px;
+}
+.about-container::after, .about-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.about-row{
+  padding-bottom: 30px;
+}
+.about-title {
+  color: rgb(248, 140, 52);
+}
+.about-button {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(255, 217, 0);
+  background-color: rgb(194, 88, 2);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.about-button :hover {
+  color: rgb(194, 88, 2);
+  background-color: rgb(248, 140, 52);
+}
+.AboutUs-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/*===========================
+END: CODE FOR ABOUT US
+===========================*/
+
+
+/*=========================== 
+START: CODE FOR CONTACT US 
+===========================*/
+.ContactUs-main{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-article{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.contact-div{
+  padding-right: 150px;
+}
+.ContactUs-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+.ContactUs-main .aside{
+  padding-top: 50px;
+}
+.contact{
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+  background-color:rgb(194, 88, 2);
+
+  border-radius: 5px;
+}
+.contact:hover{
+  color: rgb(194, 88, 2);
+  background-color:rgb(255, 217, 0);
+}
+input[type="reset"] {
+  color: rgb(194, 88, 2);
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  background-color: rgb(194, 88, 2);
+  color: white;
+}
+input[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(245, 136, 48);
+}
+/* ===============
+   STRUCTURE
+   =============== */
+.wrapper-form {
+  border-radius: 5px;
+  background-color: rgb(253, 175, 112);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+/* ===============
+   FORM CONTROLS
+   =============== */
+input,
+select,
+textarea {
+  font-size: 1em;
+  width: 200px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(245, 136, 48);
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="contactno"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(245, 136, 48);;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+textarea {
+  font-family: sans-serif;
+}
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid rgb(245, 136, 48);;
+}
+.label-required {
+  font-size: 0.8rem;
+  color: red;
+}
+/* =========================== 
+END: CODE FOR CONTACT US 
+===========================*/
+
+
+/* ===========================
+START: CODE FOR ORDER NOW
+===========================*/
+
+.OrderNow-main .aside{
+  padding-top: 50px;
+}
+input[type="reset"] {
+  color: rgb(194, 88, 2);
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  background-color: rgb(194, 88, 2);
+  color: white;
+}
+input[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid rgb(194, 88, 2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(245, 136, 48);
+}
+/* STRUCTURE*/
+.wrapper-form {
+  border-radius: 5px;
+  background-color: rgb(253, 175, 112);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+/*FORM CONTROLS*/
+input,
+select,
+textarea {
+  font-size: 1em;
+  width: 200px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(245, 136, 48);;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="contactno"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(245, 136, 48);;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+select [id="mode"]{
+  font-family: sans-serif;
+}
+textarea {
+  font-family: sans-serif;
+}
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid rgb(245, 136, 48);;
+}
+.label-required {
+  font-size: 0.8rem;
+  color: red;
+}
+.OrderNow-main .aside a:hover { 
+  background-color:rgb(194, 88, 2);
+  color: rgb(255, 217, 0);
+}
+/*===========================
+END: CODE FOR ORDER NOW 
+===========================*/
