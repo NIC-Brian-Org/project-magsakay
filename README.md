@@ -19,7 +19,7 @@
     - [Drink Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#drink-page)
     - [Absorb Page](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#absorb-page-1)
     
-* [HTML Validation Results](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#html-validation-results)
+* [HTML Validation Result](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#html-validation-results)
 
 * [CSS Validation Result](https://github.com/NIC-Brian-Org/project-magsakay/blob/main/README.md#css-validation-result)
 
