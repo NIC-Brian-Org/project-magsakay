@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  Author: Ma. Katrina P. Magsakay
+  Purpose: DGL 113 Project - Website Enhancement
+  Date Last Modified: April 07, 2022 
+-->
+
+<head>
+  <title>Absorb — Barrio Quatro</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/logo.JPG" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="Home-body">
+
+<header class="Home-header">
+  <a href="index.html"> <img src="images/logo.jpg" alt="Barrio Quatro Logo" width="150"/></a>
+<nav class="Home-nav">
+  <div class="Home-div">
+    <a href="ordernow.html">Order Now</a>
+    <a href="index.html">Home</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="aboutus.html">About Us</a> 
+    <a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+  </div>
+</nav>
+</header>
+
+<main class="Absorb-main">
+
+<h1>— ABSORB —</h1>
+
+<h2>"Dine with us and satisfy your cravings"</h2>
+
+<!-- Container of the images of the place -->
+<div class="Absorb-container">
+
+<!-- 100% image size with number in the top left of the image-->
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">1 / 6</div>
+    <img src="images/barriosign.jpg" style="width:100%" alt="Barrio's Signage">
+  </div>
+  
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">2 / 6</div>
+    <img src="images/barrioentrance.jpg" style="width:100%" alt="Barrio's Waiting Area">
+  </div>
+  
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">3 / 6</div>
+    <img src="images/barrioside.jpg" style="width:100%" alt="Barrio's Garden Side Dining Area">
+  </div>
+      
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">4 / 6</div>
+    <img src="images/barrioback.jpg" style="width:100%" alt="Barrio's Kubo Side Dining Area">
+  </div>
+  
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">5 / 6</div>
+    <img src="images/barrioback1.jpg" style="width:100%" alt="Barrio's Garden Side Dining Area (Close-up)">
+  </div>
+      
+  <div class="Absorb-mySlides">
+    <div class="Absorb-numbertext">6 / 6</div>
+    <img src="images/barriopermit.jpg" style="width:100%" alt="Barrio's Business Permit">
+  </div>
+      
+  <!-- Next and previous buttons -->
+  <a class="Absorb-next" onclick="plusSlides(1)">❯</a>
+  <a class="Absorb-prev" onclick="plusSlides(-1)">❮</a>
+
+  <!-- Caption of the images -->
+  <div class="caption-container">
+    <p id="Absorb-caption"></p>
+  </div>
+  
+  <!-- Thumbnail view of the images-->
+  <div class="Absorb-row">
+    <div class="Absorb-column">
+      <img class="Absorb-place Absorb-cursor" src="images/barriosign.jpg" style="width:100%" onclick="currentSlide(1)" alt="Barrio's Signage">
+    </div>
+    <div class="Absorb-column">
+      
+      <img class="Absorb-place Absorb-cursor" src="images/barrioentrance.jpg" style="width:100%" onclick="currentSlide(2)" alt="Barrio's Waiting Area">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-place Absorb-cursor" src="images/barrioside.jpg" style="width:100%" onclick="currentSlide(3)" alt="Barrio's Garden Side Dining Area">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-place Absorb-cursor" src="images/barrioback.jpg" style="width:100%" onclick="currentSlide(4)" alt="Barrio's Kubo Side Dining Area">
+    </div>
+    <div class="Absorb-column">
+      <img class="Absorb-place Absorb-cursor" src="images/barrioback1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Barrio's Garden Side Dining Area (Close-up)">
+    </div>    
+    <div class="Absorb-column">
+      <img class="Absorb-place Absorb-cursor" src="images/barriopermit.jpg" style="width:100%" onclick="currentSlide(6)" alt="Barrio's Business Permit">
+    </div>
+  </div>
+</div>
+
+<div class="Absorb-video">
+  <p>Have fun and enjoy with family and friends at Barrio Quatro.</p>
+  <div class="video">
+    <video class="video" width="800" controls>
+    <source src="videos/absorb.mp4" type="video/mp4"></video>
+  </div>
+</div>
+
+<aside class="aside">
+  <a class="rsv" href="contactus.html">Make a Reservation</a>
+</aside>
+</main> 
+
+<footer>
+<div class="footer-div">
+<h4>&mdash; Barrio Quatro Food and Beverage House &mdash;</h4>
+
+<a href="https://www.facebook.com/barrioquatro2021" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+<a href="https://instagram.com/barrioquatro2021" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="mailto://barrioquatro2021@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+</div>
+</footer>
+
+<script src="absorb.js"> 
+</script>
+</body>
+</html>
